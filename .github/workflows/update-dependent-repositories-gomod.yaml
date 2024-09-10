@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   update-dependent-repositories:
-    uses: networkservicemesh/.github/.github/workflows/update-dependent-repositories-gomod.yaml@main
+    uses: Ex4amp1e/.github/.github/workflows/update-dependent-repositories-gomod.yaml@main
     with:
       dependent_repositories: |
         ["sdk-k8s",

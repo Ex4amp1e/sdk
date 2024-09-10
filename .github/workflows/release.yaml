@@ -31,14 +31,14 @@ jobs:
   create-release:
     name: Create release
     needs: get-tag
-    uses: networkservicemesh/.github/.github/workflows/release.yaml@main
+    uses: Ex4amp1e/.github/.github/workflows/release.yaml@main
     secrets:
       token: ${{ secrets.NSM_BOT_GITHUB_TOKEN }}
 
   release-dependent-repositories:
     name: Release dependent repositories
     needs: [get-tag, create-release]
-    uses: networkservicemesh/.github/.github/workflows/release-dependent-repositories.yaml@main
+    uses: Ex4amp1e/.github/.github/workflows/release-dependent-repositories.yaml@main
     with:
       tag: ${{ needs.get-tag.outputs.tag }}
       dependent_repositories: |
