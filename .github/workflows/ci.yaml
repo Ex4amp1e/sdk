@@ -22,6 +22,9 @@ jobs:
   exclude-fmt-errorf:
     uses: networkservicemesh/.github/.github/workflows/exclude-fmt-errorf.yaml@main
 
+  exclude-time-pkg:
+    uses: Ex4amp1e/.github/.github/workflows/exclude-time.yaml@add-time-linter
+
   restrict-nsm-deps:
     uses: networkservicemesh/.github/.github/workflows/restrict-nsm-deps.yaml@main
     with:
