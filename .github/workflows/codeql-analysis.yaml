@@ -17,4 +17,4 @@ on:
 
 jobs:
   analyze:
-    uses: networkservicemesh/.github/.github/workflows/codeql-analysis.yaml@main
+    uses: Ex4amp1e/.github/.github/workflows/codeql-analysis.yaml@main
