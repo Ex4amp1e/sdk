@@ -17,7 +17,7 @@ jobs:
   golangci-lint:
     uses: Ex4amp1e/.github/.github/workflows/golangci-lint.yaml@main
     with:
-      linter-version: v1.53.3
+      linter-version: v1.60.3
 
   exclude-fmt-errorf:
     uses: Ex4amp1e/.github/.github/workflows/exclude-fmt-errorf.yaml@main
